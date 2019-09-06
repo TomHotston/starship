@@ -20,6 +20,7 @@ const DEFAULT_PROMPT_ORDER: &[&str] = &[
     "git_status",
     "package",
     // ↓ Toolchain modules ↓
+    "dotnet",
     "golang",
     "nodejs",
     "python",

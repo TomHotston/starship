@@ -2,6 +2,7 @@
 mod character;
 mod cmd_duration;
 mod directory;
+mod dotnet;
 mod git_branch;
 mod git_state;
 mod git_status;
@@ -32,6 +33,7 @@ pub fn handle<'a>(module: &str, context: &'a Context) -> Option<Module<'a>> {
         "character" => character::module(context),
         "cmd_duration" => cmd_duration::module(context),
         "directory" => directory::module(context),
+        "dotnet" => dotnet::module(context),
         "git_branch" => git_branch::module(context),
         "git_state" => git_state::module(context),
         "git_status" => git_status::module(context),
